@@ -58,4 +58,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [GNU General Public License v3.0](https://fsf.org/).
+The Project is open-sourced software licensed under the [GNU General Public License v3.0](https://fsf.org/).
