@@ -22,10 +22,10 @@
                 </li>
               @endforeach
             </ul>
+            <div class="mt-3">
+              <a class="btn btn-success btn-sm" href="/tag/create"><i class="fas fa-plus-circle"></i> Create new Tag</a>
+            </div>
           </div>
-        </div>
-        <div class="mt-2">
-          <a class="btn btn-success btn-sm" href="/tag/create"><i class="fas fa-plus-circle"></i> Create new Tag</a>
         </div>
       </div>
     </div>
