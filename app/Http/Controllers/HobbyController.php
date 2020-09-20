@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 
 class HobbyController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth')->except(['index','show']);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -14,9 +17,11 @@ class HobbyController extends Controller
      */
     public function index()
     {
-      $hobbies = Hobby::all();
+      //$hobbies = Hobby::all();
+        //$hobbies = Hobby::paginate(10);
+        $hobbies = Hobby::orderBy('created_at','DESC')->paginate();
         return view('hobby.index')->with([
-          'hobbies'=> $hobbies
+              'hobbies'=> $hobbies
         ]);
     }
 
@@ -44,7 +49,8 @@ class HobbyController extends Controller
         ]);
         $hobby = new Hobby([
           'name' => $request['name'],
-          'description' => $request['description']
+          'description' => $request['description'],
+            'user_id' => auth()->id(),
         ]);
         $hobby->save();
         return $this->index()->with(

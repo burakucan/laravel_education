@@ -7,7 +7,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -20,6 +20,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app/Tag.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/HobbyController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/resources/views/hobby/index.blade.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -135,10 +141,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/user" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="application.passwordSafe" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\laravel_education\resources\views\user" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -154,7 +165,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600532453024</updated>
-      <workItem from="1600532454405" duration="5368000" />
+      <workItem from="1600532454405" duration="6733000" />
+      <workItem from="1600539697962" duration="2140000" />
+      <workItem from="1600541878143" duration="42000" />
+      <workItem from="1600572205665" duration="3675000" />
     </task>
     <servers />
   </component>
@@ -162,9 +176,25 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="582" y="182" key="#Inspections" timestamp="1600573244691">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="582" y="182" key="#Inspections/0.0.1920.1040/1920.21.1680.1010@0.0.1920.1040" timestamp="1600573244691" />
+    <state x="452" y="95" width="1016" height="910" key="#Intentions" timestamp="1600539675177">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="95" width="1016" height="910" key="#Intentions/0.0.1920.1040/1920.21.1680.1010@0.0.1920.1040" timestamp="1600539675177" />
+    <state x="410" y="165" width="1099" height="756" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600539515530">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="410" y="165" width="1099" height="756" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.21.1680.1010@0.0.1920.1040" timestamp="1600539515530" />
     <state x="627" y="157" key="SettingsEditor" timestamp="1600533544422">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="157" key="SettingsEditor/0.0.1920.1040/1920.21.1680.1010@0.0.1920.1040" timestamp="1600533544422" />
+    <state x="600" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600572700636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="600" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.21.1680.1010@0.0.1920.1040" timestamp="1600572700636" />
   </component>
 </project>
