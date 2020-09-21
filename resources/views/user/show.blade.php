@@ -1,43 +1,53 @@
 @extends('layouts.app')
-@section('page_title','Hobbies')
+
 @section('content')
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-10">
-        <div class="card">
-          <div style="font-size: 150%" class="card-header">{{$user->name}}</div>
-             <div class="card-body">
-                  <p><b>My Motto </b>: <br> {{$user->motto}}</p>
-                  <p><b>About Me </b>: <br> {{$user->about_me}}</p>
-                    <div class="mx">
-                        @if($user->hobbies->count() > 0)
-                            <h5 class="mt-5 mb-2">Hobbies of <b>{{$user->name}}</b></h5>
-                        <ul class="list-group mt-2 mb-2">
-                            @foreach($user->hobbies as $hobby)
-                                <li class="list-group-item">
-                                    <a title="Show Details" href="/hobby/{{$hobby->id}}">{{$hobby->name}}</a>
-                                    <div class="float-right mx-auto mr-2">{{$hobby->created_at->diffForHumans()}}</div>
-                                    @auth
-                                        <br>
-                                        @foreach($hobby->tags as $tag)
-                                            <a href="/hobby_tag/tag/{{$tag->id}}"><span class="badge badge-{{$tag->style}}">{{$tag->name}}</span></a>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+                <div class="card">
+                    <div style="font-size: 150%;" class="card-header">{{ $user->name }}</div>
+
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <b>My Motto:<br>{{$user->motto}}</b>
+                                <p class="mt-2"><b>About me:</b><br>{{$user->about_me}}</p>
+                                
+
+                                <h5>Hobbies of {{ $user->name }}</h5>
+                                <ul class="list-group">
+                                    @if($user->hobbies->count() > 0)
+                                        @foreach($user->hobbies as $hobby)
+                                            <li class="list-group-item">
+                                                <a title="Show Details" href="/hobby/{{ $hobby->id }}">{{ $hobby->name }}</a>
+                                                <span class="float-right mx-2">{{ $hobby->created_at->diffForHumans() }}</span>
+                                                <br>
+                                                @foreach($hobby->tags as $tag)
+                                                    <a href="/hobby/tag/{{ $tag->id }}"><span class="badge badge-{{ $tag->style }}">{{ $tag->name }}</span></a>
+                                                @endforeach
+                                            </li>
                                         @endforeach
-                                    @endauth
+                                </ul>
+                                @else
+                                    <p>
+                                        {{ $user->name }} has not created any hobbies yet.
+                                    </p>
+                                @endif
+                            </div>
+                            <div class="col-md-3">
+                                <img class="img-thumbnail" src="/img/300x400.jpg" alt="{{ $user->name }}">
+                            </div>
+                        </div>
 
-                                </li>
-                            @endforeach
-                        </ul>
-                        @else
-                            <b>{{$user->name}}</b> has not created any hobbies yet.
-                        @endif
+
                     </div>
-              <div>
-                  <a class="btn btn-primary btn-sm mt-3" href="{{URL::previous()}}"><i class="fas fa-arrow-left"></i> Back to Overview</a>
-              </div>
-          </div>
-        </div>
 
-      </div>
+                </div>
+
+                <div class="mt-4">
+                    <a class="btn btn-primary btn-sm" href="{{ URL::previous() }}"><i class="fas fa-arrow-circle-up"></i> Back to Overview</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 @endsection

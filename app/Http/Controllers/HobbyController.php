@@ -79,10 +79,10 @@ class HobbyController extends Controller
 
         $all_tags = Tag::all();
         $used_tags = $hobby->tags;
-        $avalible_tags = $all_tags->diff($used_tags);
+        $available_tags = $all_tags->diff($used_tags);
         return view('hobby.show')->with([
           'hobby'=> $hobby,
-            'avalible_tags' => $avalible_tags,
+            'available_tags' => $available_tags,
             'message_success' => Session::get('message_success'),
             'message_warning' => Session::get('message_warning'),
         ]);

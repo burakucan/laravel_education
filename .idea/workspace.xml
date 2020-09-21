@@ -172,7 +172,10 @@
       <workItem from="1600541878143" duration="42000" />
       <workItem from="1600572205665" duration="3675000" />
       <workItem from="1600634471612" duration="6668000" />
-      <workItem from="1600642821539" duration="5162000" />
+      <workItem from="1600642821539" duration="6131000" />
+      <workItem from="1600659291826" duration="173000" />
+      <workItem from="1600659483809" duration="71000" />
+      <workItem from="1600659635773" duration="1147000" />
     </task>
     <servers />
   </component>
@@ -200,10 +203,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="600" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.21.1680.1010@0.0.1920.1040" timestamp="1600572700636" />
-    <state x="605" y="22" width="710" height="996" key="find.popup" timestamp="1600654787216">
+    <state x="605" y="22" width="710" height="996" key="find.popup" timestamp="1600659655611">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="605" y="22" width="710" height="996" key="find.popup/0.0.1920.1040/1920.21.1680.1010@0.0.1920.1040" timestamp="1600654787216" />
+    <state x="605" y="22" width="710" height="996" key="find.popup/0.0.1920.1040/1920.21.1680.1010@0.0.1920.1040" timestamp="1600659655611" />
     <state x="532" y="237" key="run.anything.popup" timestamp="1600650101303">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
