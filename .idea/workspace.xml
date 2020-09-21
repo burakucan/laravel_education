@@ -25,6 +25,7 @@
     <setting file="file://$PROJECT_DIR$/app/Tag.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/resources/views/user/show.blade.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/HobbyController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/hobby/index.blade.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/hobby/show.blade.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
@@ -133,6 +134,7 @@
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hjlbPvdnTQoIjDkPqDkQOYaBaW" />
@@ -175,7 +177,7 @@
       <workItem from="1600642821539" duration="6131000" />
       <workItem from="1600659291826" duration="173000" />
       <workItem from="1600659483809" duration="71000" />
-      <workItem from="1600659635773" duration="1147000" />
+      <workItem from="1600659635773" duration="5819000" />
     </task>
     <servers />
   </component>
@@ -211,5 +213,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="532" y="237" key="run.anything.popup/0.0.1920.1040/1920.21.1680.1010@0.0.1920.1040" timestamp="1600650101303" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1600661329423">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/1920.21.1680.1010@0.0.1920.1040" timestamp="1600661329423" />
   </component>
 </project>

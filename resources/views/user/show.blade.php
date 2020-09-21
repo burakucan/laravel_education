@@ -12,7 +12,7 @@
                             <div class="col-md-9">
                                 <b>My Motto:<br>{{$user->motto}}</b>
                                 <p class="mt-2"><b>About me:</b><br>{{$user->about_me}}</p>
-                                
+
 
                                 <h5>Hobbies of {{ $user->name }}</h5>
                                 <ul class="list-group">
