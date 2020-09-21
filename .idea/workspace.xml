@@ -23,9 +23,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/app/Tag.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/HobbyController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/hobby/index.blade.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/resources/views/hobby/show.blade.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -169,6 +171,8 @@
       <workItem from="1600539697962" duration="2140000" />
       <workItem from="1600541878143" duration="42000" />
       <workItem from="1600572205665" duration="3675000" />
+      <workItem from="1600634471612" duration="6668000" />
+      <workItem from="1600642821539" duration="5162000" />
     </task>
     <servers />
   </component>
@@ -196,5 +200,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="600" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.21.1680.1010@0.0.1920.1040" timestamp="1600572700636" />
+    <state x="605" y="22" width="710" height="996" key="find.popup" timestamp="1600654787216">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="605" y="22" width="710" height="996" key="find.popup/0.0.1920.1040/1920.21.1680.1010@0.0.1920.1040" timestamp="1600654787216" />
+    <state x="532" y="237" key="run.anything.popup" timestamp="1600650101303">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040/1920.21.1680.1010@0.0.1920.1040" timestamp="1600650101303" />
   </component>
 </project>

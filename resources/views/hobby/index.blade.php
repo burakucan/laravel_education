@@ -22,10 +22,7 @@
                     @auth
 
                         <span>Posted by: <a href="/user/{{$hobby->user->id}}">{{$hobby->user->name}}</a> ({{$hobby->user->hobbies->count()}} Hobbies)</span>
-                        <br>
-                        @foreach($hobby->tags as $tag)
-                            <a href="/hobby_tag/tag/{{$tag->id}}"><span class="badge badge-{{$tag->style}}">{{$tag->name}}</span></a>
-                        @endforeach
+
                   <form class="float-right ml-2" action="/hobby/{{$hobby->id}}" method="post">
                     @csrf
                     @method("DELETE")
@@ -35,6 +32,12 @@
                   <a class="btn btn-sm btn-light float-right mr-2" href="/hobby/{{$hobby->id}}/edit"><i class="fas fa-edit"></i>   Edit Hobby</a>
                     @endauth
                     <div class="float-right mr-2">{{$hobby->created_at->diffForHumans()}}</div>
+                    @auth
+                        <br>
+                        @foreach($hobby->tags as $tag)
+                            <a href="/hobby_tag/tag/{{$tag->id}}"><span class="badge badge-{{$tag->style}}">{{$tag->name}}</span></a>
+                        @endforeach
+                    @endauth
                 </li>
 
               @endforeach
