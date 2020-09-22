@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
+use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
 {
@@ -59,7 +61,11 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
-        //
+        return view('user.edit')->with([
+            'user'=>$user,
+            'message_success' => Session::get('message_success'),
+            'message_warning' => Session::get('message_warning'),
+        ]);
     }
 
     /**
@@ -71,7 +77,26 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        //
+        $request->validate([
+            'name' => 'required|min:3',
+            'motto' => 'required|min:5',
+            'image' => 'mimes:jpeg,jpg,bmp,png,gif',
+        ]);
+        if ($request->image){//Landscape
+            $this->save_images($request->image,$user->id);
+        }
+
+        $user->update([
+            'name' => $request['name'],
+            'about_me' => $request['about_me'],
+            'motto' => $request['motto'],
+
+        ]);
+        return redirect('/home')->with(
+            [
+                'message_success' =>"Your profile was updated."
+            ]
+        );
     }
 
     /**
@@ -83,5 +108,44 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         //
+    }
+
+    public function save_images($image_input,$user_id){
+
+        $image = Image::make($image_input);
+        if ($image->width() > $image->height()){
+            $image->widen(500)
+                ->save(public_path() . '/img/users/' . $user_id . "_large.jpg")
+                ->widen(300)->pixelate(12)
+                ->save(public_path() . '/img/users/' . $user_id . "_pixelated.jpg");
+            $image = Image::make($image_input);
+            $image->widen(60)
+                ->save(public_path() . '/img/users/' . $user_id . "_thumb.jpg");
+        }else{//Portarit
+            $image = Image::make($image_input);
+            $image->heighten(500)
+                ->save(public_path() . '/img/users/' . $user_id . "_large.jpg")
+                ->heighten(300)->pixelate(12)
+                ->save(public_path() . '/img/users/' . $user_id . "_pixelated.jpg");
+            $image = Image::make($image_input);
+            $image->heighten(60)
+                ->save(public_path() . '/img/users/' . $user_id . "_thumb.jpg");
+        }
+    }
+
+    public function delete_images($user_id){
+        if (file_exists(public_path() . '/img/users/' . $user_id . "_large.jpg")){
+            unlink(public_path() . '/img/users/' . $user_id . "_large.jpg");
+        }
+        if (file_exists(public_path() . '/img/users/' . $user_id . "_thumb.jpg")){
+            unlink(public_path() . '/img/users/' . $user_id . "_thumb.jpg");
+        }
+        if (file_exists(public_path() . '/img/users/' . $user_id . "_pixelated.jpg")){
+            unlink(public_path() . '/img/users/' . $user_id . "_pixelated.jpg");
+        }
+
+        return back()->with([
+            'message_success' =>"The image was deleted."
+        ]);
     }
 }

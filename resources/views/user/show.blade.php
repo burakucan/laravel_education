@@ -19,6 +19,12 @@
                                     @if($user->hobbies->count() > 0)
                                         @foreach($user->hobbies as $hobby)
                                             <li class="list-group-item">
+                                                @if(file_exists('img/hobbies/' . $hobby->id . '_thumb.jpg'))
+                                                    <a title="Show Details" href="/hobby/{{ $hobby->id }}">
+                                                        <img src="/img/hobbies/{{$hobby->id}}_thumb.jpg" alt="Hobby Thumb">
+                                                    </a>
+                                                @endif
+                                                &nbsp;
                                                 <a title="Show Details" href="/hobby/{{ $hobby->id }}">{{ $hobby->name }}</a>
                                                 <span class="float-right mx-2">{{ $hobby->created_at->diffForHumans() }}</span>
                                                 <br>
@@ -34,9 +40,23 @@
                                     </p>
                                 @endif
                             </div>
-                            <div class="col-md-3">
-                                <img class="img-thumbnail" src="/img/300x400.jpg" alt="{{ $user->name }}">
-                            </div>
+
+                            @auth
+                                @if(file_exists('img/hobbies/' . $hobby->user->id . '_large.jpg'))
+                                    <div class="col-md-3">
+                                        <img class="img-thumbnail" src="/img/users/{{$hobby->user->id}}_large.jpg" alt="{{ $user->name }}">
+                                    </div>
+                                @endif
+                            @endauth
+                            @guest
+                                @if(file_exists('img/hobbies/' . $hobby->user->id . '_pixelated.jpg'))
+                                    <div class="col-md-3">
+                                        <img class="img-thumbnail" src="/img/users/{{$hobby->user->id}}_pixelated.jpg" alt="{{ $user->name }}">
+                                    </div>
+                                @endif
+                            @endguest
+
+
                         </div>
 
 

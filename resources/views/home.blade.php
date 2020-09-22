@@ -10,15 +10,20 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-9">
+                            <a class="float-right btn btn-sm btn-light mr-2 mx-2" href="/user/{{ auth()->user()->id }}/edit"><i class="fas fa-edit"></i> Edit Profile</a>
                             <h2>Hello {{ auth()->user()->name }}</h2>
                             <h5>Your Motto</h5>
                             <p><p>{{ auth()->user()->motto ?? '' }}</p></p>
                             <h5>Your "About Me" -Text</h5>
                             <p><p>{{ auth()->user()->about_me ?? '' }}</p></p>
                         </div>
-                        <div class="col-md-3">
-                            <img class="img-thumbnail" src="/img/300x400.jpg" alt="{{ auth()->user()->name }}">
-                        </div>
+
+                        @if(file_exists('img/users/' . auth()->user()->id . '_thumb.jpg'))
+                            <div class="col-md-3">
+                                <img class="img-thumbnail" src="/img/users/{{auth()->user()->id}}_large.jpg" alt="{{ auth()->user()->name }}">
+                            </div>
+                        @endif
+
                     </div>
 
 
@@ -30,10 +35,13 @@
                     <ul class="list-group">
                         @foreach($hobbies as $hobby)
                             <li class="list-group-item">
-                                <a title="Show Details" href="/hobby/{{ $hobby->id }}">
-                                    <img src="/img/thumb_landscape.jpg" alt="thumb"></a>
-                                    {{ $hobby->name }}
-                                </a>
+                                @if(file_exists('img/hobbies/' . $hobby->id . '_thumb.jpg'))
+                                    <a title="Show Details" href="/hobby/{{ $hobby->id }}">
+                                        <img src="/img/hobbies/{{$hobby->id}}_thumb.jpg" alt="Hobby Thumb">
+                                    </a>
+                                @endif
+                                &nbsp;
+                                <a title="Show Details" href="/hobby/{{ $hobby->id }}">{{ $hobby->name }}</a>
                                 @auth
                                     <form class="float-right ml-2" style="display: inline" action="/hobby/{{ $hobby->id }}" method="post">
                                         @csrf

@@ -33,3 +33,7 @@ Route::get('/hobby_tag/tag/{tag_id}','HobbyTagController@getFilteredHobbies')->n
 //Attach & Detach Routes
 Route::get('/hobby/{hobby_id}/tag/{tag_id}/attach', 'HobbyTagController@attachTag');
 Route::get('/hobby/{hobby_id}/tag/{tag_id}/detach', 'HobbyTagController@detachTag');
+
+//Delete Images
+Route::get('/delete-images/hobby/{hobby_id}', 'HobbyController@delete_images');
+Route::get('/delete-images/user/{user_id}', 'UserController@delete_images');

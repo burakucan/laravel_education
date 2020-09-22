@@ -100,7 +100,9 @@ class HobbyController extends Controller
     public function edit(Hobby $hobby)
     {
         return view('hobby.edit')->with([
-          'hobby'=>$hobby
+          'hobby'=>$hobby,
+            'message_success' => Session::get('message_success'),
+            'message_warning' => Session::get('message_warning'),
         ]);
     }
 
@@ -171,5 +173,21 @@ class HobbyController extends Controller
             $image->heighten(60)
                 ->save(public_path() . '/img/hobbies/' . $hobby_id . "_thumb.jpg");
         }
+    }
+
+    public function delete_images($hobby_id){
+        if (file_exists(public_path() . '/img/hobbies/' . $hobby_id . "_large.jpg")){
+            unlink(public_path() . '/img/hobbies/' . $hobby_id . "_large.jpg");
+        }
+        if (file_exists(public_path() . '/img/hobbies/' . $hobby_id . "_thumb.jpg")){
+            unlink(public_path() . '/img/hobbies/' . $hobby_id . "_thumb.jpg");
+        }
+        if (file_exists(public_path() . '/img/hobbies/' . $hobby_id . "_pixelated.jpg")){
+            unlink(public_path() . '/img/hobbies/' . $hobby_id . "_pixelated.jpg");
+        }
+
+        return back()->with([
+            'message_success' =>"The image was deleted."
+        ]);
     }
 }

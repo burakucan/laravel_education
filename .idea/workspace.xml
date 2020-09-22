@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6b8a347e-9e2f-450d-94b5-63e0ac00162b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +41,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/app/Tag.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resources/views/user/edit.blade.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/user/show.blade.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
@@ -147,7 +166,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/user" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="application.passwordSafe" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -177,12 +196,24 @@
       <workItem from="1600642821539" duration="6131000" />
       <workItem from="1600659291826" duration="173000" />
       <workItem from="1600659483809" duration="71000" />
-      <workItem from="1600659635773" duration="5819000" />
+      <workItem from="1600659635773" duration="7939000" />
+      <workItem from="1600732273908" duration="4138000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="582" y="182" key="#Inspections" timestamp="1600573244691">
@@ -197,10 +228,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="410" y="165" width="1099" height="756" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.21.1680.1010@0.0.1920.1040" timestamp="1600539515530" />
-    <state x="627" y="157" key="SettingsEditor" timestamp="1600533544422">
+    <state x="624" y="215" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600733497927">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="627" y="157" key="SettingsEditor/0.0.1920.1040/1920.21.1680.1010@0.0.1920.1040" timestamp="1600533544422" />
+    <state x="624" y="215" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.21.1680.1010@0.0.1920.1040" timestamp="1600733497927" />
+    <state x="627" y="157" key="SettingsEditor" timestamp="1600735295401">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="157" key="SettingsEditor/0.0.1920.1040/1920.21.1680.1010@0.0.1920.1040" timestamp="1600735295401" />
     <state x="600" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600572700636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

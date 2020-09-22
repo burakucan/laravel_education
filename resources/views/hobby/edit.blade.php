@@ -15,6 +15,18 @@
                                 <input type="text" class="form-control{{$errors->has('name') ? ' border-danger': ' '}}" id="name" name="name" value="{{old('name') ?? $hobby->name}}">
                                 <small class="form-text text-danger">{!!$errors->first('name')!!}</small>
                             </div>
+
+                            @if(file_exists('img/hobbies/' . $hobby->id . '_large.jpg'))
+                                <div class="mb-2">
+                                    <a href="/img/hobbies/{{$hobby->id}}_large.jpg" data-lightbox="img/hobbies/{{$hobby->id}}_large.jpg" data-title="{{ $hobby->name }}">
+                                        <img style="max-height: 300px;max-width: 400px;" src="/img/hobbies/{{$hobby->id}}_large.jpg" alt="">
+                                    </a>
+                                    <a class="btn btn-outline-danger mt-2 float-right" href="/delete-images/hobby/{{$hobby->id}}">Delete Image</a>
+                                    <br>
+                                    <i class="fa fa-search-plus mt-2"></i> Click image to enlarge
+
+                                </div>
+                            @endif
                             <div class="form-group">
                                 <label for="image">Image</label>
                                 <input type="file" class="form-control-file{{$errors->has('image') ? ' border-danger': ' '}}" id="image" name="image">
