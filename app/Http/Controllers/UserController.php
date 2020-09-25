@@ -68,6 +68,8 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
+        abort_unless(Gate::allows('update' , $user), 403,'You are not authorized.');
+
         return view('user.edit')->with([
             'user'=>$user,
             'message_success' => Session::get('message_success'),
@@ -84,6 +86,8 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
+        abort_unless(Gate::allows('update' , $user), 403,'You are not authorized.');
+
         $request->validate([
             'name' => 'required|min:3',
             'motto' => 'required|min:5',
@@ -114,7 +118,7 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
-        //
+        abort_unless(Gate::allows('delete' , $user), 403,'You are not authorized.');
     }
 
     public function save_images($image_input,$user_id){

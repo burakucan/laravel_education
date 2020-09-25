@@ -20,10 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b8a347e-9e2f-450d-94b5-63e0ac00162b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HobbyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HobbyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/AdminMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/TagPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/TagPolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/hobby/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/hobby/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/tag/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tag/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +60,7 @@
     <setting file="file://$PROJECT_DIR$/resources/views/hobby/index.blade.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/Policies/HobbyPolicy.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/hobby/show.blade.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/Policies/TagPolicy.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -210,6 +215,8 @@
       <workItem from="1600870443235" duration="612000" />
       <workItem from="1600938353762" duration="986000" />
       <workItem from="1600962578521" duration="6910000" />
+      <workItem from="1601027291211" duration="369000" />
+      <workItem from="1601029964113" duration="7491000" />
     </task>
     <servers />
   </component>
@@ -229,9 +236,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="582" y="182" key="#Inspections" timestamp="1600573244691">
+    <state x="582" y="182" key="#Inspections" timestamp="1601042038998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="582" y="182" key="#Inspections/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1601042038998" />
     <state x="582" y="182" key="#Inspections/0.0.1920.1040/1920.21.1680.1010@0.0.1920.1040" timestamp="1600573244691" />
     <state x="452" y="95" width="1016" height="910" key="#Intentions" timestamp="1600539675177">
       <screen x="0" y="0" width="1920" height="1040" />
